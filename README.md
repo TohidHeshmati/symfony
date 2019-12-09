@@ -5,10 +5,10 @@ symfony practice
 ### things to install:
 //TODO به اینا لینک و کد اضافه کن
 
- - composer
+ - [composer](https://getcomposer.org/download/) (global) [2](https://www.ionos.com/community/hosting/php/install-and-use-php-composer-on-ubuntu-1604/)
  - php
  - symfony
- - elastic search
+ - [elastic search](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-elasticsearch-on-ubuntu-16-04)
  - PHPStorm
 	 - PHP Annotations
 	 - and Symfony plugin
@@ -33,8 +33,8 @@ everything is fine, next:
 
  
  
-start server: `symfony server:start`
-default server: `http://localhost:8000/`
+start server: `symfony server:start`  
+default server: `http://localhost:8000/`  
 information about the project: `php bin/console about`
 to automate downloading [bundles](https://symfony.com/doc/current/bundles.html) and the most common tasks of Symfony applications we use Flex.
 به زبان ساده کامندهایی به کامپوزر اضافه می‌کنه که استفاده ازش رو راحت می‌کنه. مثلا قبلا باید کلی می‌نوشتی الان یه کلمه می‌نویسی فلان چیز رو بگیر و می‌گیره
@@ -99,9 +99,10 @@ on top of each function or class as an annotation:
 - to see what route matches
 	- php bin/console router:match /route/address
 
-route table has 4 properties:
-|Name   |Method|Scheme|Host|Path|
-|-------|------|------|----|----|
+route table has 4 properties:  
+  
+|Name   |Method|Scheme|Host|Path|  
+|-------|------|------|----|----|  
 |myRoute|ANY   |ANY   |ANY |main|
 
 to use twig our controller should `extends AbstractController`

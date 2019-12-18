@@ -123,3 +123,35 @@ to use twig our controller should `extends AbstractController`
 	- `php bin/console debug:container ServiceName`
 	
 Autoconfigure sets the tags for us.
+
+## DB
+no direct component for DB but we can use `Doctrine`
+Doctrine = 
+- ORM (Object Relational Mapping)
+	- mapping objects to classes and vice versa
+- ODM (Object Document Mapper)
+	- used for MongoDB (NoSQL)
+- DBAL (DB Abstraction Layer)
+	- Abstraction over PHP PDO
+
+**to install** `composer require doctrine maker` 
+to warm-up cache (not important):
+`php bin/console cache:warmup --env=our_env --no-debug`
+
+to create DB for first time:
+`php bin/console doctrine:databse:create`
+**to create Entity:**
+`php bin/console make:entity EntityName`
+
+- Annotations on top of class:
+	- Entity
+	- Table
+
+after create or editing Entities generate migrations.
+to generate migrations:
+`php bin/console doctrine:migrations:diff`
+to use it:
+`php bin/console doctrine:migrations:migrate`
+to undo migrations:
+`php bin/console doctrine:migrations:migrate prev`
+

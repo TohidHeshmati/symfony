@@ -154,4 +154,7 @@ to use it:
 `php bin/console doctrine:migrations:migrate`  
 to undo migrations:  
 `php bin/console doctrine:migrations:migrate prev`  
-
+  
+  
+  REPO: holds all sql and makes db access only through one point and puts a layer over db.  
+  

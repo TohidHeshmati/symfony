@@ -146,12 +146,12 @@ to create DB for first time:
 - Annotations on top of class:
 	- Entity
 	- Table
-
+  
 after create or editing Entities generate migrations.
-to generate migrations:
+to generate migrations:  
 `php bin/console doctrine:migrations:diff`
-to use it:
+to use it:  
 `php bin/console doctrine:migrations:migrate`
-to undo migrations:
+to undo migrations:  
 `php bin/console doctrine:migrations:migrate prev`
 

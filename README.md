@@ -1,4 +1,5 @@
 
+
 # symfony 5 in a NUTshell
 symfony practice
 
@@ -114,3 +115,11 @@ to use twig our controller should `extends AbstractController`
  - route can contain condition based on context from request
 
 
+
+## Services
+- to see all services:
+	- `php bin/console debug:container`
+- to see more detail on one specific service:
+	- `php bin/console debug:container ServiceName`
+	
+Autoconfigure sets the tags for us.
